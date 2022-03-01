@@ -17,4 +17,5 @@ const command: CommandOptions = {
     }
 }
 
+
 export default command;
