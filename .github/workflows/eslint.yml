@@ -1,26 +1,11 @@
-
 name: CI
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-  workflow_dispatch:
-
-
+on: [push, pull_request]
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Install deps
-      - run: yarn
-
-      - name: ESLint
-      - run: eslint src/ --quiet
+    - uses: actions/checkout@v2
+    - name: Install modules
+      run: yarn
+    - name: Run ESLint
+      run: eslint src/ --quiet
