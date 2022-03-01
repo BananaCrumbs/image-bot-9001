@@ -31,6 +31,6 @@ const command: CommandOptions = {
         
         ImageFetcher.getImage("/images/drake?text1=" + text_nah + "&text2=" + text_yea, ctx);
     }
-}
+};
 
 export default command;

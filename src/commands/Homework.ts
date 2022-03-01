@@ -68,6 +68,6 @@ const command: CommandOptions = {
         
         await ImageFetcher.getImage(`/images/homework?url1=${encodeURIComponent(user_a)}&url2=${encodeURIComponent(user_b)}&url3=${encodeURIComponent(user_c)}&url4=${encodeURIComponent(user_d)}&url5=${encodeURIComponent(user_e)}&url6=${encodeURIComponent(user_f)}`, ctx);
     }
-}
+};
 
 export default command;

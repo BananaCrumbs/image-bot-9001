@@ -6,7 +6,7 @@ const command: CommandOptions = {
         name: "about",
         description: "About the bot",
     },
-    exec: (ctx): any => {
+    exec: (ctx) => {
         
         const embed = new Embed()
             .description("Thanks for using ImageBot9001!\n" +
@@ -17,8 +17,8 @@ const command: CommandOptions = {
             .color(0x00ff00)
             .thumbnail("https://media.discordapp.net/attachments/938924318824472646/948085064359616542/image-bot-9001.bananacrumbs.com-output.png");
         
-        return ctx.reply(embed);
+        ctx.reply(embed);
     }
-}
+};
 
 export default command;

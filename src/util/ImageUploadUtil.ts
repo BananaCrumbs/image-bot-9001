@@ -4,8 +4,6 @@ import {CommandContext} from "discord-rose";
 
 export default class ImageUploadUtils {
     
-    private constructor() {}
-    
     /**
      * Get the name of the file from the path.
      * @param path {string} The path to the file.
@@ -43,7 +41,7 @@ export default class ImageUploadUtils {
             body: formData,
             headers: formData.getHeaders(),
             parser: (_) => _,
-        })
+        });
     }
     
 }

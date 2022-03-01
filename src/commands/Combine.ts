@@ -37,6 +37,6 @@ const command: CommandOptions = {
         //upload
         await ImageFetcher.getImage("/images/combine?url1=" + encodeURIComponent(user_a_avatar) + "&url2=" + encodeURIComponent(user_b_avatar), ctx);
     }
-}
+};
 
 export default command;

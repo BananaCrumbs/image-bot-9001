@@ -9,6 +9,6 @@ const command: CommandOptions = {
     exec: (ctx) => {
         ctx.reply(`[Click to invite me (it'll pull up a little box)](https://discordapp.com/oauth2/authorize?client_id=${ctx.worker.user.id}&scope=applications.commands)`);
     }
-}
+};
 
 export default command;

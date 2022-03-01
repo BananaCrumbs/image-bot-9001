@@ -35,6 +35,6 @@ const command: CommandOptions = {
         await ImageFetcher.getImage("/images/trash?url1=" + encodeURIComponent(url_trashed) + "&url2=" + encodeURIComponent(url_trasher), ctx);
         
     }
-}
+};
 
 export default command;

@@ -31,6 +31,6 @@ const command: CommandOptions = {
         
         return ImageFetcher.getImage("/images/buttons?text1=" + left_text + "&text2=" + right_text, ctx);
     }
-}
+};
 
 export default command;

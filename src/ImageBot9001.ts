@@ -6,7 +6,7 @@ import {CacheOptions} from "discord-rose/dist/typings/options";
 
 import cooldownMiddleware from "@discord-rose/cooldown-middleware";
 
-console.log(`ImageBot9001 Copyright (C) 2022 BananaCrumbs.  See LICENSE.txt for more information.`);
+console.log("ImageBot9001 Copyright (C) 2022 BananaCrumbs.  See LICENSE.txt for more information.");
 
 const token = process.env["DISCORD_TOKEN"];
 const intents = 513;

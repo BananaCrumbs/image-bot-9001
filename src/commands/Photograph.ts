@@ -15,6 +15,6 @@ const command: CommandOptions = {
         
         return getURLFromInteractionCompImage(ctx, "/images/photograph");
     },
-}
+};
 
 export default command;

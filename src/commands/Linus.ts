@@ -31,6 +31,6 @@ const command: CommandOptions = {
         
         await ImageFetcher.getImage("/images/linus?text1=" + text_top + "&text2=" + text_bottom, ctx);
     },
-}
+};
 
 export default command;

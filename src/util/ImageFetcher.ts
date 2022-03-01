@@ -11,8 +11,6 @@ import {CommandContext} from "discord-rose";
  */
 export default class ImageFetcher {
     
-    private constructor() {}
-    
     /**
      * Get the image path and upload it to Discord given the context.
      * 
@@ -24,7 +22,7 @@ export default class ImageFetcher {
      */
     public static async getImage(path: string, ctx: CommandContext, type: "png" | "gif" | "jpeg" | "jpg" = "png"): Promise<void> {
         await ctx.typing();
-        axios.get("http://localhost:6969" + (path.startsWith(`/`) ? path : `/${path}`), {
+        axios.get("http://localhost:6969" + (path.startsWith("/") ? path : `/${path}`), {
             responseType: "arraybuffer",
         })
             .then(res => {
@@ -44,7 +42,7 @@ export default class ImageFetcher {
      * @param maxLength {number} The maximum length of the string.
      * @returns {string} The (possibly truncated) string.
      */
-    public static enforceStringLength(str: string, maxLength: number = 64): string {
+    public static enforceStringLength(str: string, maxLength = 64): string {
         if(str.length > maxLength) {
             return str.substring(0, maxLength);
         }

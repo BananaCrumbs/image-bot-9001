@@ -8,8 +8,9 @@ import {CommandContext} from "discord-rose";
  * @param ctx {CommandContext} the context of the command.
  * @param path {string} the route for the api (e.g. `/images/what`).  This will add the `?` and parameters automatically.
  * @param user_name {string} the name of the user object (not the username of the user).
+ * @param type {string} the type of image (either "png" or "gif").
  */
-export default async function(ctx: CommandContext, path: string, user_name = "user") {
+export default async function(ctx: CommandContext, path: string, user_name = "user", type: "png" | "gif" = "png") {
     const resolved: any = ctx.interaction.data?.resolved;
     
     //if the type is an attachment, use that
@@ -18,12 +19,12 @@ export default async function(ctx: CommandContext, path: string, user_name = "us
         
         if(content_type !== "image/png" && content_type !== "image/jpeg" && content_type !== "image/gif") return;
         
-        await ImageFetcher.getImage(`${path}?url=${encodeURIComponent(resolved.attachments[Object.keys(resolved.attachments)[0] || 0].url)}`, ctx, content_type.split("/")[1]);
+        await ImageFetcher.getImage(`${path}?url=${encodeURIComponent(resolved.attachments[Object.keys(resolved.attachments)[0] || 0].url)}`, ctx, type);
     } else { //otherwise, use the mentioned user's avatar
         const url = await getURLFromContext(ctx, ctx.options[user_name].user);
         
         if(!url) return;
-        
-        await ImageFetcher.getImage(`${path}?url=${encodeURIComponent(url)}`, ctx, "png");
+    
+        await ImageFetcher.getImage(`${path}?url=${encodeURIComponent(url)}`, ctx, type);
     }
 }

@@ -15,7 +15,7 @@ const command: CommandOptions = {
         
         return getURLFromInteractionCompImage(ctx, "/images/invert");
     }
-}
+};
 
 
 export default command;
