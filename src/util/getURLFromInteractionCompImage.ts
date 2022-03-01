@@ -28,3 +28,5 @@ export default async function(ctx: CommandContext, path: string, user_name = "us
         await ImageFetcher.getImage(`${path}?url=${encodeURIComponent(url)}`, ctx, type);
     }
 }
+
+;
