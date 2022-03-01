@@ -1,0 +1,6 @@
+
+.idea
+node_modules
+yarn.lock
+dist
+package-lock.json
