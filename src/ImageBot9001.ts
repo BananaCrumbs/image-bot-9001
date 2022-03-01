@@ -6,12 +6,14 @@ import {CacheOptions} from "discord-rose/dist/typings/options";
 
 import cooldownMiddleware from "@discord-rose/cooldown-middleware";
 
+console.log(`ImageBot9001 Copyright (C) 2022 BananaCrumbs.  See LICENSE.txt for more information.`);
+
 const token = process.env["DISCORD_TOKEN"];
 const intents = 513;
 const cache: CacheOptions = {
     users: true,
     voiceStates: false,
-    self: false,
+    self: true,
     roles: false,
     messages: false,
     channels: false,

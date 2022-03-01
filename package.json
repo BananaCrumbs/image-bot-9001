@@ -2,10 +2,10 @@
   "name": "image-bot-9001",
   "version": "1.0.0",
   "description": "Discord bot for meme generation, using https://github.com/Million900o/Image-API",
-  "main": "dist/IIIMageBot.js",
+  "main": "dist/ImageBot9001.js",
   "scripts": {
     "prestart": "eslint --fix src && tsc -b --verbose",
-    "start": "node dist/IIIMageBot.js"
+    "start": "node dist/ImageBot9001.js"
   },
   "keywords": ["discord", "discord-bot", "bot", "image", "meme-generation", "meme", "memes"],
   "author": "BananaCrumbs",
