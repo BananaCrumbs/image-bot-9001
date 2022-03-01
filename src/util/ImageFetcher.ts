@@ -28,7 +28,7 @@ export default class ImageFetcher {
             responseType: "arraybuffer",
         })
             .then(res => {
-                ImageUploadUtils.uploadImage(ctx, Buffer.from(res.data), "", "iiimagebot.bananacrumbs.com-output." + type);
+                ImageUploadUtils.uploadImage(ctx, Buffer.from(res.data), "", "image-bot-9001.bananacrumbs.com-output." + type);
             })
             .catch((e: any) => {
                 ctx.reply(`Error: ${e?.message}`).then(() => {

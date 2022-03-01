@@ -1,5 +1,5 @@
 {
-  "name": "iiimage-bot",
+  "name": "image-bot-9001",
   "version": "1.0.0",
   "description": "Discord bot for meme generation, using https://github.com/Million900o/Image-API",
   "main": "dist/IIIMageBot.js",
@@ -23,7 +23,7 @@
   },
   "bugs": {
     "email": "bugreport@bananacrumbs.com",
-    "url": "https://github.com/bananacrumbs/iiimage-bot/issues"
+    "url": "https://github.com/bananacrumbs/image-bot-9001/issues"
   },
   "maintainers": [
     {
@@ -38,6 +38,6 @@
   "license": "See LICENSE.txt",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bananacrumbs/iiimage-bot.git"
+    "url": "https://github.com/bananacrumbs/image-bot-9001.git"
   }
 }

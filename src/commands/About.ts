@@ -15,7 +15,7 @@ const command: CommandOptions = {
                 " [Image-API](github.com/Million900o/Image-API) by Million900o.\n\n" +
                 "For help, use `/help`.  To invite the bot to your server, use `/invite`.")
             .color(0x00ff00)
-            .thumbnail("https://media.discordapp.net/attachments/938924318824472646/948085064359616542/iiimagebot.bananacrumbs.com-output.png");
+            .thumbnail("https://media.discordapp.net/attachments/938924318824472646/948085064359616542/image-bot-9001.bananacrumbs.com-output.png");
         
         return ctx.reply(embed);
     }
